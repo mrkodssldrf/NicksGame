@@ -1,9 +1,9 @@
-_EventEmitter = require  'events'
-_Store = require './vuex/store'
+EventEmitter = require  'events'
+Store = require './vuex/store'
 GameSystem = require './GameSystem.coffee'
 
 ## App
-class Application extends _EventEmitter.EventEmitter
+class Application extends EventEmitter.EventEmitter
   _gs = new GameSystem()
   constructor: -> console.log this
     

@@ -1,7 +1,8 @@
-_fileSystem = require('fs')
+FileSystem = require 'fs'
 
+## GameSystem
 class GameSystem
-  _fs : _fileSystem
+  _fs : FileSystem
   constructor : -> console.log @._fs
   
 exports = module.exports = GameSystem
